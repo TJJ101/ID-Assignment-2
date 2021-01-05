@@ -11,6 +11,9 @@
 <body>
 <header>
     <img class="main-logo" src="Assets/Logo.png" alt="Main Logo">
+    <div class="d-flex flex-lg-row-reverse align-items-end">
+        <div id="apicart-cart-dropdown" class="dropdown-right" ></div>
+    </div>
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
         <a class="navbar-brand" href="" onclick="return false;">
             <img src="Assets/Logo.png" width="40" height="30" alt="Main Logo">
@@ -40,10 +43,50 @@
         </ul>
     </nav><br>
     <h1 class="text-center">Training Programs</h1>
-</header>
+</header><br>
+<article>
+    <div class="container bg-info pt-3 rounded">
+        <h2 class="text-center text-danger"><u>Basics Mastery</u></h2>
+        <div class="d-flex flex-lg-row justify-content-around py-3">
+            <img src="Assets/pullup bar.png" alt="A image of a pullup bar" class="img-thumbnail basicimg">
+            <img src="Assets/pushup diagram.jpg" alt="Pushup Diagram" class="img-thumbnail  basicimg">
+        </div>
+
+        <div class="sampleflex py-3">
+            <h3 class="text-danger">What you will get:</h3>
+            <ul>
+                <li>
+                    A comprehensive guide with supporting media, explaining everything you need to build a strong foundation in Calisthenics
+                </li>
+                <li>
+                    1-on-1 Video Call Coaching to help address any problems you may face
+                </li>
+                <li>
+                    How to Structure your future training sessions
+                </li>
+                <li>
+                    In-depth guide to Nutrition and Training Principals
+                </li>
+                <li>
+                    Full guide on Injury Prevention
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex flex-lg-row justify-content-lg-around py-3 px-4">
+            <h3 class="price">
+                $59
+            </h3>
+            <button data-apicart-add-item="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/data/01/1.json">
+                Buy
+            </button>
+        </div>
+    </div>
+</article>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@apicart/vue-components@1.0.0-alpha7/dist/bundles/default/default.full.min.js"></script>
 <script src="script.js"></script>
 </body>
 

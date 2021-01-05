@@ -23,4 +23,11 @@ $('#password, #confirmPass').on('keyup', function () {
       $('#warning').html('Password Does not Match').css('color', 'red');
 });
 
-
+  Apicart
+  .setDevEnv() // Switch to dev environment
+  .configure({
+    store: new Apicart.Store({
+      token: "LfkUIBRkw51xZcypQcDPc42GD7Vn0gGH?3d19cQlIS5o!!iqldLgyCA8tKYF_j12"
+    })
+  })
+  .initVueBundle();

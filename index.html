@@ -61,8 +61,10 @@
 
 
 <header>
-    
     <img class="main-logo align-self-center" src="Assets/Logo.png" alt="Main Logo">
+    <div class="d-flex flex-lg-row-reverse align-items-end">
+        <div id="apicart-cart-dropdown" class="dropdown-right" ></div>
+    </div>
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
         <a class="navbar-brand" href="" onclick="return false;">
             <img src="Assets/Logo.png" width="40" height="30" alt="Main Logo">
@@ -107,11 +109,26 @@
 
 <!---This is where a search bar would be-->
 
+<!---Online Shop-->
+<div id="apicart-cart-dropdown"></div>
+
+<!-- 
+  After clicking on any element with the data-apicart-add-item attribute
+  an item with the given url will be added into the cart
+--->
+<button data-apicart-add-item="https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/01/1.json">
+  Buy
+</button>
+
+<!-- #apicart will be replaced by components according to configuration --->
+<div id="apicart"></div>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <h1 class="text-center">Hi</h1>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@apicart/vue-components@1.0.0-alpha7/dist/bundles/default/default.full.min.js"></script>
 <script src="script.js"></script>
 
 </body>

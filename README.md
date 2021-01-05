@@ -1,7 +1,7 @@
 # Assignment 2
 Interactive Development Assignment 2
 ---------
-Url: 
+Url: https://tjj101.github.io/ID-Assignment-2/
 --------------
 Project Name: Calisthenics Store 2.0
 ----------------------------------------------------------------------------
