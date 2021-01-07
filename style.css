@@ -14,6 +14,8 @@ body{
 }
 
 
+
+
 /*  Login/Register Popup  */
 input[type=text], input[type=password] {
     width: 100%;
@@ -64,35 +66,7 @@ input[type=text], input[type=password] {
 .close:focus {
     color: red;
     cursor: pointer;
-}  
-
-/* Training Programs Page CSS */
-
-.basicimg{
-    border-radius: 10%;
-    width: 30%;
 }
-hr{
-    width: 50%;
-    left: 50%;
-    border: 50%;
-    border-color: #888;
-}
-.sampleflex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.price{
-    color: green;
-    font-family: Verdana;
-}
-.buybtn{
-    color: #333;
-    border-radius: 10%;
-}
-
-/* Animation  */
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
@@ -105,6 +79,88 @@ hr{
     from {transform: scale(0)} 
     to {transform: scale(1)}
 }
+
+
+
+
+/* Training Programs Page CSS */
+
+.bgcontainer{
+    display: block;
+    background-color: turquoise;
+    padding-top: 2%;
+    border-radius: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.bgcontainer2{
+    display: block;
+    background-color: #23506F;
+    padding-top: 2%;
+    border-radius: 2%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.basicimg{
+    border-radius: 10%;
+    width: 30%;
+}
+.basicimg2{
+    border-radius: 10%;
+    width: 35%;
+}
+hr{
+    width: 50%;
+    left: 50%;
+    border: 50%;
+    border-color: #888;
+}
+.sampleflex3{
+    display:flex;
+    justify-content: center;
+}
+@media screen and (min-width: 800px){
+    .sampleflex3{
+        flex-direction: row;
+    }
+}
+.sampleflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 22%;
+    padding-right: 22%;
+}
+.sampleflex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+.price{
+    color: green;
+    flex-basis: 1;
+    font-family: Verdana;
+}
+.price2{
+    color: #3DE16D;
+    flex-basis: 1;
+    font-family: Verdana;
+}
+.buybtn{
+    color: #333;
+    border-radius: 10%;
+}
+.proddesc{
+    color: black;
+}
+.buybtn{
+    flex-grow: 1;
+    flex-basis: 5;
+    max-width: 20%;
+}
+
 
 /*  Media Query Stuff  */
 @media only screen and (min-width: 992px){
@@ -120,5 +176,11 @@ hr{
     }
     .cancelbtn{
         width: 100%;
+    }
+}
+@media screen and (max-width: 800px){
+    .sampleflex{
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
