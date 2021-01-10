@@ -39,7 +39,7 @@ $('#password, #confirmPass').on('keyup', function () {
 var ApicartConfig = {
   env: 'dev',
   storage: {
-    cacheKey: 3 
+    cacheKey: Math.random
   }
 }
 Apicart
