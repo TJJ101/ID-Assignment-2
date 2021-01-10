@@ -36,13 +36,13 @@ $('#password, #confirmPass').on('keyup', function () {
 
 
 /* API Javascript */
+var cachenum = Math.random;
 var ApicartConfig = {
   env: 'dev',
   storage: {
-    cacheKey: 3 
+    cacheKey: cachenum
   }
 }
-
 Apicart
   .setDevEnv()
   .configure({
