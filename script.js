@@ -36,11 +36,10 @@ $('#password, #confirmPass').on('keyup', function () {
 
 
 /* API Javascript */ 
-var ranCacheKey = Math.random;
 var ApicartConfig = {
   env: 'dev',
   storage: {
-    cacheKey: ranCacheKey
+    cacheKey: 3
   }
 }
 Apicart
