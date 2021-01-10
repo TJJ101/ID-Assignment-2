@@ -68,45 +68,51 @@
 
 <header>
     <img class="main-logo align-self-center" src="Assets/Logo.png" alt="Main Logo">
-    <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
         <a class="navbar-brand" href="" onclick="return false;">
             <img src="Assets/Logo.png" width="40" height="30" alt="Main Logo">
         </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link active" href="" onclick="return false;">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Training Programs.html">Training Programs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Equipment.html">Equipments</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="equipdropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Bundles
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="Equipment Bundle.html">Equipment Bundles</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="Training Bundle.html">Training Bundles</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="Limited Time Offer.html">Limited Time Offers</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" onclick="return false;" id="navAcc" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Register/Login
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <button class="dropdown-item" href="#" onclick="document.getElementById('register').style.display='block'">Register a New Account</button>
-                    <div class="dropdown-divider"></div>
-                    <button class="dropdown-item" href="#" onclick="document.getElementById('login').style.display='block'">Login with an Existing Account</button>
-                </div>
-            </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="" onclick="return false;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Training Programs.html">Training Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Equipment.html">Equipments</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="equipdropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bundles
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Equipment Bundle.html">Equipment Bundles</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Training Bundle.html">Training Bundles</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Limited Time Offer.html">Limited Time Offers</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" onclick="return false;" id="navAcc" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Register/Login
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <button class="dropdown-item" href="#" onclick="document.getElementById('register').style.display='block'">Register a New Account</button>
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item" href="#" onclick="document.getElementById('login').style.display='block'">Login with an Existing Account</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
+    <!--Shopping Cart on the Right-->
     <div class="d-flex flex-row-reverse">
         <div id="apicart-cart-dropdown" ></div>
     </div>
