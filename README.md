@@ -95,6 +95,9 @@ in the details, click back onto the cart again (because it doenst fully clear) t
 click checkout again. When the loading becomes long, thats when you refresh. If it works
 when you add to cart, everything should be normal now.
 
+The github one and the one when you download the html file seems to work when one doesn't
+and vice versa (probably due to the cachekey).
+
 Also the checkout page on the cart doesnt work on any other page other than the Home page.
 
 
