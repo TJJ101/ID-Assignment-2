@@ -35,7 +35,13 @@ $('#password, #confirmPass').on('keyup', function () {
 
 
 
-/* API Javascript */
+/* API Javascript */ 
+var ApicartConfig = {
+  env: 'dev',
+  storage: {
+    cacheKey: 3 
+  }
+}
 Apicart
   .setDevEnv()
   .configure({
