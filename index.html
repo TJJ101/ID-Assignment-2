@@ -10,24 +10,30 @@
 </head>
 <body>
 
+<!--Back To Top Button-->
+<button onclick= "backToTop()" id="bttopbtn">Back to Top</button>
+
 <!--This is for register popup-->
 <div id="register" class="popupbg">
-    <form class="popupcontent animate" action="#" method="post">
+    <form class="popupcontent animate" action="" method="post">
         <div class="closecontainer">
             <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
         </div>
         <div class="popupcontainer">
-            <label for="Username"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" id="username" name="username" required>
+            <label for="name"><b>Name:</b></label>
+            <input type="text" placeholder="Enter Full Name" id="name" name="name" required>
+            
+            <label for="email"><b>Email:</b></label>
+            <input type="email" placeholder="Enter Email" id="email" name="email" required>
 
-            <label for="password"><b>Password</b></label>
+            <label for="password"><b>Password:</b></label>
             <input type="password" placeholder="Enter Password" id="password" name="password" required>
             <label><b>Confirm Password:</b>
                 <input type="password" name="confirmPass" id="confirmPass">
                 <span id="warning"></span>
             </label>
             <br>
-            <button type="submit">Register</button>
+            <button type="submit" id="regsubmit">Register</button>
         </div>
     </form>
 </div>
@@ -40,10 +46,10 @@
             <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
         </div>
         <div class="popupcontainer">
-            <label for="Username"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" id="username" name="username" required>
+            <label for="email"><b>Email:</b></label>
+            <input type="email" placeholder="Enter Email" id="email" name="email" required>
 
-            <label for="password"><b>Password</b></label>
+            <label for="password"><b>Password:</b></label>
             <input type="password" placeholder="Enter Password" id="password" name="password" required>
             <br>
             <button type="submit">Login</button>
@@ -62,13 +68,13 @@
 
 <header>
     <img class="main-logo align-self-center" src="Assets/Logo.png" alt="Main Logo">
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark">
         <a class="navbar-brand" href="" onclick="return false;">
             <img src="Assets/Logo.png" width="40" height="30" alt="Main Logo">
         </a>
         
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link active" href="" onclick="return false;">Home</a>
             </li>
             <li class="nav-item">
@@ -78,15 +84,15 @@
                 <a class="nav-link" href="Equipment.html">Equipments</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" onclick="return false;" id="equipdropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="" id="equipdropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Bundles
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Starter Bundle</a>
+                    <a class="dropdown-item" href="Equipment Bundle.html">Equipment Bundles</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Train at Home Bundle</a>
+                    <a class="dropdown-item" href="Training Bundle.html">Training Bundles</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Seasonal Bundle</a>
+                    <a class="dropdown-item" href="Limited Time Offer.html">Limited Time Offers</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -101,63 +107,20 @@
             </li>
         </ul>
     </nav>
-    <div class="d-flex flex-lg-row-reverse align-items-end">
-        <div id="apicart-cart-dropdown" class="dropdown-right" ></div>
+    <div class="d-flex flex-row-reverse">
+        <div id="apicart-cart-dropdown" ></div>
     </div>
-    <h1 class="text-center">Welcome to the Cali Shop</h1>
+    <!--<h1 class="text-center">Welcome to the Cali Shop</h1>-->
 </header>
 
 <!---This is where a search bar would be-->
 
 <!---Online Shop-->
-<div id="apicart-cart-dropdown"></div>
-
 <!-- #apicart will be replaced by components according to configuration --->
 <div id="apicart"></div>
 
-    <div class="sampleflex3">
-        <div class="apicart-products__product">
-            <a role="button" aria-label="Basics Mastery Program" class="apicart-products__product-image-wrapper">
-                <img src="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/images/01/1-1609835645-90.png" loading="lazy" alt="Basics Mastery Program" class="apicart-products__product-image">
-            </a>
-            <div class="apicart-products__product-info-wrapper">
-                <a role="button" class="apicart-products__product-info-line apicart-products__product-info-line--name">
-                    <strong>Basics Mastery Program</strong>
-                </a>
-                <div class="apicart-products__product-info-line">
-                    <p>
-                        A comprehensive  Guide with Supporting Media which details everything you need in order to Build a Strong Foundation in Calisthenics.
-                        <br>
-                        It includes:
-                        <br>
-                        <ul>
-                            <li>
-                                1-on-1 Video Call Coaching
-                            </li>
-                            <li>
-                                How to Structure your Future Training Sessions
-                            </li>
-                            <li>
-                                In-depth Guide to Nutrition and Training Principals
-                            </li>
-                            <li>
-                                Full Guide on Injury Prevention
-                            </li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="apicart-products__product-info-line apicart-products__product-info-price-buy-button">
-                    <span class="apicart-products__product-info-price">€50.00</span>
-                    <span>
-                        <a class="apicart-buy-button apicart-button apicart-button--solid">Add to cart</a>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<h1 class="text-center">Hi</h1>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

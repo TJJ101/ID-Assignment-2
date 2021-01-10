@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
-    <title>Equipment Page</title>
+    <title>Training Bundle Page</title>
 </head>
 <body>
 
-<!--Back to Top Button-->
+<!--Back To Top Button-->
 <button onclick= "backToTop()" id="bttopbtn">Back to Top</button>
 
 <!--This is for register popup-->
@@ -52,7 +52,6 @@
             <label for="password"><b>Password:</b></label>
             <input type="password" placeholder="Enter Password" id="password" name="password" required>
             <br>
-
             <button type="submit">Login</button>
             <label>
                 <input type="checkbox" checked="checked" name="remember">Remember me
@@ -67,30 +66,32 @@
 </div>
 
 <header style="padding-bottom: 5%;">
+    <!--Logo-->
     <img class="main-logo" src="Assets/Logo.png" alt="Main Logo">
+    <!--NavBar-->
     <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
             <img src="Assets/Logo.png" width="40" height="30" alt="Main Logo">
         </a>
-        
+            
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="Index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Training Programs.html">Training Programs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="" onclick="return false;">Equipments</a>
+                <a class="nav-link" href="Equipment.html">Equipments</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Bundles
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="Equipment Bundle.html">Equipment Bundles</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="Training Bundle.html">Training Bundles</a>
+                    <a class="dropdown-item" href="" onclick="return false;">Training Bundles</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="Limited Time Offer.html">Limited Time Offers</a>
                 </div>
@@ -107,120 +108,49 @@
             </li>
         </ul>
     </nav>
+    <!--Shopping Cart Api on the Right-->
     <div class="d-flex flex-row-reverse align-items-end">
         <div id="apicart-cart-dropdown"></div>
     </div>
-    <h1 class="text-center text-dark"><u>Training Equipments</u></h1>
+    <h1 class="text-center text-dark"><u>Special Bundles</u></h1>
 </header>
 
-<!--Gymnastic Rings HTML Code-->
+<!--Training Bundle-->
 <article>
     <div class="simpleflex">
         <div class="apicart-products__product">
-            <a role="button" aria-label="Gymnastics Rings" class="apicart-products__product-image-wrapper">
-                <img src="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/images/04/4-1609955979-28.jpg" loading="lazy" alt="Gymnastics Rings" class="apicart-products__product-image">
+            <a role="button" aria-label="Training Bundle" class="apicart-products__product-image-wrapper">
+                <img src="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/images/07/7-1610073718-46.jpg" loading="lazy" alt="Training Bundle" class="apicart-products__product-image">
             </a>
         </div>
         <div class="apicart-products__product-info-wrapper flextext">
             <a role="button" class="apicart-products__product-info-line apicart-products__product-info-line--name">
-                <strong>Gymnastic Rings</strong>
+                <strong>Training Bundle</strong>
             </a>
             <div class="apicart-products__product-info-line">
                 <p>
-                A Sturdy Pair of Wooden Gymnastic Rings. 
-                They are a New and Fun Way to Introduce Additional Challenge into your Workout.
-                <br><br>
-                Some Exercises to Try on Them:
-                <ul>
-                    <li>Dips</li>
-                    <li>L-Sit Pullups</li>
-                    <li>Ring Muscle Ups</li>
-                    <li>And Many Others!</li>
-                </ul>
-            </p>
-            </div>
-            <div class="apicart-products__product-info-line apicart-products__product-info-price-buy-button">
-                <span class="apicart-products__product-info-price"><b>SGD&nbsp;45.00</b></span>
-                <span>
-                    <a class="apicart-buy-button apicart-button apicart-button--solid" data-apicart-add-item="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/data/04/4.json">Add to cart</a>
-                </span>
-            </div>
-        </div>
-    </div>    
-</article>
-
-<!--Free Standing Pullup Bar HTML Code-->
-<article>
-    <div class="simpleflex">
-        <div class="apicart-products__product">
-            <a role="button" aria-label="Freestanding Pullup Bar" class="apicart-products__product-image-wrapper">
-                <img src="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/images/05/5-1609956159-48.jpg" loading="lazy" alt="Freestanding Pullup Bar" class="apicart-products__product-image">
-            </a>
-        </div>
-        <div class="apicart-products__product-info-wrapper flextext">
-            <a role="button" class="apicart-products__product-info-line apicart-products__product-info-line--name">
-                <strong>Freestanding Pullup Bar</strong>
-            </a>
-            <div class="apicart-products__product-info-line">
-                <p>
-                    A freestanding pullup bar that takes up only 1.2m² of space made of high quality materials.
-                    Perfect for Pullups and Other Pulling Exercises.
+                    A Special Bundle for Individuals of Any Skill Level
                     <br><br>
-                    Some Exercises to Try on Them:
+                    It includes:
                     <ul>
-                        <li>Pullups</li>
-                        <li>Muscle Ups</li>
-                        <li>Front Lever</li>
+                        <li>Basic Mastery</li>
+                        <li>Handstand Mastery</li>
+                        <li>Planche Mastery</li>
                     </ul>
                 </p>
             </div>
             <div class="apicart-products__product-info-line apicart-products__product-info-price-buy-button">
-                <span class="apicart-products__product-info-price"><b>SGD&nbsp;120.00</b></span>
+                <span class="apicart-products__product-info-price"><b>SGD&nbsp;150.00</b></span>
                 <span>
-                    <a class="apicart-buy-button apicart-button apicart-button--solid" data-apicart-add-item="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/data/05/5.json">Add to cart</a>
+                    <a class="apicart-buy-button apicart-button apicart-button--solid" data-apicart-add-item="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/data/07/7.json">Add to cart</a>
                 </span>
             </div>
         </div>
     </div>
 </article>
 
-<!--Dip Bars HTML Code-->
-<article>
-    <div class="simpleflex">
-        <div class="apicart-products__product">
-            <a role="button" aria-label="Dip Bars" class="apicart-products__product-image-wrapper">
-                <img src="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/images/06/6-1609956270-79.jpg" loading="lazy" alt="Dip Bars" class="apicart-products__product-image">
-            </a>
-        </div>
-        <div class="apicart-products__product-info-wrapper flextext">
-            <a role="button" class="apicart-products__product-info-line apicart-products__product-info-line--name">
-                <strong>Dip Bars</strong>
-            </a>
-            <div class="apicart-products__product-info-line">
-                <p>
-                    A pair of dip bars with a compact design that allows easy storage. 
-                    It is made of high-quality materials and can support up to 120kg.
-                    <br><br>
-                    Types of Exercises you can perform on this is:
-                    <ul>
-                        <li>Dips</li>
-                        <li>Pullups</li>
-                        <li>Handstand</li>
-                        <li>Front Lever</li>
-                        <li>Planche</li>
-                        <li>And Many More!</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="apicart-products__product-info-line apicart-products__product-info-price-buy-button">
-                <span class="apicart-products__product-info-price"><b>SGD&nbsp;50.00</b></span>
-                <span>
-                    <a class="apicart-buy-button apicart-button apicart-button--solid" data-apicart-add-item="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/data/06/6.json">Add to cart</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</article>
+
+
 
 <!--JavaScripts-->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -229,5 +159,4 @@
 <script src="https://cdn.jsdelivr.net/npm/@apicart/vue-components@1.0.0-alpha7/dist/bundles/default/default.full.min.js"></script>
 <script src="script.js"></script>
 </body>
-
 </html>

@@ -10,6 +10,9 @@
 </head>
 <body>
 
+<!--Scroll Back to Top Button-->
+<button onclick= "backToTop()" id="bttopbtn">Back to Top</button>
+
 <!--This is for register popup-->
 <div id="register" class="popupbg">
     <form class="popupcontent animate" action="#" method="post">
@@ -17,11 +20,15 @@
             <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
         </div>
         <div class="popupcontainer">
-            <label for="Username"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" id="username" name="username" required>
+            <label for="name"><b>Name:</b></label>
+            <input type="text" placeholder="Enter Full Name" id="name" name="name" required>
 
-            <label for="password"><b>Password</b></label>
+            <label for="email"><b>Email:</b></label>
+            <input type="email" placeholder="Enter Email" id="email" name="email" required>
+
+            <label for="password"><b>Password:</b></label>
             <input type="password" placeholder="Enter Password" id="password" name="password" required>
+
             <label><b>Confirm Password:</b>
                 <input type="password" name="confirmPass" id="confirmPass">
                 <span id="warning"></span>
@@ -32,7 +39,6 @@
     </form>
 </div>
 
-
 <!---Login Popup-->
 <div id="login" class="popupbg">
     <form class="popupcontent animate" action="#" method="post">
@@ -40,10 +46,10 @@
             <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
         </div>
         <div class="popupcontainer">
-            <label for="Username"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" id="username" name="username" required>
+            <label for="email"><b>Email:</b></label>
+            <input type="email" placeholder="Enter Email" id="email" name="email" required>
 
-            <label for="password"><b>Password</b></label>
+            <label for="password"><b>Password:</b></label>
             <input type="password" placeholder="Enter Password" id="password" name="password" required>
             <br>
             <button type="submit">Login</button>
@@ -59,15 +65,16 @@
     </form>
 </div>
 
-<header>
+<header style="padding-bottom: 5%;">
     <img class="main-logo" src="Assets/Logo.png" alt="Main Logo">
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark">
         <a class="navbar-brand" href="" onclick="return false;">
             <img src="Assets/Logo.png" width="40" height="30" alt="Main Logo">
         </a>
         
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="Index.html">Home</a>
             </li>
             <li class="nav-item">
@@ -77,15 +84,15 @@
                 <a class="nav-link" href="Equipment.html">Equipments</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Bundles
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Bundles
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Starter Bundle</a>
+                    <a class="dropdown-item" href="Equipment Bundle.html">Equipment Bundles</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Train at Home Bundle</a>
+                    <a class="dropdown-item" href="Training Bundle.html">Training Bundles</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Seasonal Bundle</a>
+                    <a class="dropdown-item" href="Limited Time Offer.html">Limited Time Offers</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -100,183 +107,147 @@
             </li>
         </ul>
     </nav>
-    <div class="d-flex flex-lg-row-reverse align-items-end">
-        <div id="apicart-cart-dropdown" class="dropdown-right" ></div>
+    <!--The Cart Function on the top right-->
+    <div class="d-flex flex-row-reverse align-items-end">
+        <div id="apicart-cart-dropdown"></div>
     </div>
-    <h1 class="text-center text-dark">Training Programs</h1>
-</header><br>
+    <!--Heading Text-->
+    <h1 class="text-center text-dark"><u>Training Programs</u></h1>
+</header>
 
+<!--Basics Mastery HTML Code-->
 <article>
-    <div class="sampleflex3">
+    <div class="simpleflex">
         <div class="apicart-products__product">
             <a role="button" aria-label="Basics Mastery Program" class="apicart-products__product-image-wrapper">
                 <img src="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/images/01/1-1609835645-90.png" loading="lazy" alt="Basics Mastery Program" class="apicart-products__product-image">
             </a>
-            <div class="apicart-products__product-info-wrapper">
-                <a role="button" class="apicart-products__product-info-line apicart-products__product-info-line--name">
-                    <strong>Basics Mastery Program</strong>
-                </a>
-                <div class="apicart-products__product-info-line">
-                    <p>
-                        A comprehensive  Guide with Supporting Media which details everything you need in order to Build a Strong Foundation in Calisthenics.
-                        <br>
-                        It includes:
-                        <br>
-                        <ul>
-                            <li>
-                                1-on-1 Video Call Coaching
-                            </li>
-                            <li>
-                                How to Structure your Future Training Sessions
-                            </li>
-                            <li>
-                                In-depth Guide to Nutrition and Training Principals
-                            </li>
-                            <li>
-                                Full Guide on Injury Prevention
-                            </li>
-                        </ul>
-                    </p>                
-                </div>
-                <div class="apicart-products__product-info-line apicart-products__product-info-price-buy-button">
-                    <span class="apicart-products__product-info-price">SGD&nbsp;50.00</span>
-                    <span>
-                        <a class="apicart-buy-button apicart-button apicart-button--solid" data-apicart-add-item="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/data/01/1.json">Add to cart</a>
-                    </span>
-                </div>
+        </div>
+        <div class="apicart-products__product-info-wrapper flextext">
+            <a role="button" class="apicart-products__product-info-line apicart-products__product-info-line--name">
+                <strong>Basics Mastery Program</strong>
+            </a>
+            <div class="apicart-products__product-info-line">
+                <p>
+                    A comprehensive  Guide with Supporting Media which details everything you need in order to Build a Strong Foundation in Calisthenics.
+                    <br><br>
+                    It includes:
+                    <br>
+                    <ul>
+                        <li>
+                            1-on-1 Video Call Coaching
+                        </li>
+                        <li>
+                            How to Structure your Future Training Sessions
+                        </li>
+                        <li>
+                            In-depth Guide to Nutrition and Training Principals
+                        </li>
+                        <li>
+                            Full Guide on Injury Prevention
+                        </li>
+                    </ul>
+                </p>                
+            </div>
+            <div class="apicart-products__product-info-line apicart-products__product-info-price-buy-button">
+                <span class="apicart-products__product-info-price"><b>SGD&nbsp;50.00</b></span>
+                <span>
+                    <a class="apicart-buy-button apicart-button apicart-button--solid" data-apicart-add-item="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/data/01/1.json">Add to cart</a>
+                </span>
             </div>
         </div>
     </div>
-</article><br>
+</article>
 
+<!--Handstand Mastery HTML Code-->
 <article>
-    <div class="sampleflex3">
+    <div class="simpleflex">
         <div class="apicart-products__product">
             <a role="button" aria-label="Handstand Mastery" class="apicart-products__product-image-wrapper">
                 <img src="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/images/02/2-1609951297-67.jpg" loading="lazy" alt="Handstand Mastery" class="apicart-products__product-image">
             </a>
-            <div class="apicart-products__product-info-wrapper">
-                <a role="button" class="apicart-products__product-info-line apicart-products__product-info-line--name">
-                    <strong>Handstand Mastery</strong>
-                </a>
-                <div class="apicart-products__product-info-line">
-                    <p>
-                        A Comprehensive Guide that Details All you Need to Know About the Beautiful Movement, the Handstand.
-                        <br>
-                        It includes:
-                        <br>
-                        <ul>
-                            <li>
-                                Different Progressions of the Handstand to Help Develop Handbalancing Skills and Confidence
-                            </li>
-                            <li>
-                                Warm Up and Conditioning Routine to Reduce Risk of Injuries
-                            </li>
-                            <li>
-                                1-on-1 Video Call Coaching
-                            </li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="apicart-products__product-info-line apicart-products__product-info-price-buy-button">
-                    <span class="apicart-products__product-info-price">SGD&nbsp;39.00</span>
-                    <span>
-                        <a class="apicart-buy-button apicart-button apicart-button--solid">Add to cart</a>
-                    </span>
-                </div>
+        </div>
+        <div class="apicart-products__product-info-wrapper flextext">
+            <a role="button" class="apicart-products__product-info-line apicart-products__product-info-line--name">
+                <strong>Handstand Mastery</strong>
+            </a>
+            <div class="apicart-products__product-info-line">
+                <p>
+                    A Comprehensive Guide that Details all you need to Know about the Beautiful Movement, the Handstand.
+                    <br><br>
+                    It includes:
+                    <br>
+                    <ul>
+                        <li>
+                            Different Progressions of the Handstand to Help Develop Handbalancing Skills and Confidence
+                        </li>
+                        <li>
+                            Warm Up and Conditioning Routine to Reduce Risk of Injuries
+                        </li>
+                        <li>
+                            1-on-1 Video Call Coaching
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="apicart-products__product-info-line apicart-products__product-info-price-buy-button">
+                <span class="apicart-products__product-info-price"><b>SGD&nbsp;39.00</b></span>
+                <span>
+                    <a class="apicart-buy-button apicart-button apicart-button--solid" data-apicart-add-item="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/data/02/2.json">Add to cart</a>
+                </span>
             </div>
         </div>
     </div>
-</article><br>
+</article>
 
+<!--Planche Mastery HTML CODE-->
 <article>
-    <div class="sampleflex3">
+    <div class="simpleflex">
         <div class="apicart-products__product">
             <a role="button" aria-label="Planche Mastery" class="apicart-products__product-image-wrapper">
                 <img src="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/images/03/3-1609955813-14.png" loading="lazy" alt="Planche Mastery" class="apicart-products__product-image">
             </a>
-            <div class="apicart-products__product-info-wrapper">
-                <a role="button" class="apicart-products__product-info-line apicart-products__product-info-line--name">
-                    <strong>Planche Mastery</strong>
-                </a>
-                <div class="apicart-products__product-info-line">
-                    <p>
-                        A Comprehensive Guide with Supporting Media that Details Everything you Need to Know about the Coveted Movement, the Planche.
-                        <br>
-                        It includes:
-                        <br>
-                        <ul>
-                            <li>
-                                How to Train Movements that Revolves Around the Planche like Presses, Planche Pushups, etc.
-                            </li>
-                            <li>
-                                A 16-Week Plan Suitable for Individuals of All Skill Level
-                            </li>
-                            <li>
-                                How to Plan and Program your Future Planche Training
-                            </li>
-                            <li>
-                                Warm-up Routine Designed to Prepare your Body and Reduce the Risk of Injuries
-                            </li>
-                            <li>
-                                1-on-1 Video Call Coaching
-                            </li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="apicart-products__product-info-line apicart-products__product-info-price-buy-button">
-                    <span class="apicart-products__product-info-price">SGD&nbsp;99.00</span>
-                    <span>
-                        <a class="apicart-buy-button apicart-button apicart-button--solid">Add to cart</a>
-                    </span>
-                </div>
+        </div>
+        <div class="apicart-products__product-info-wrapper flextext">
+            <a role="button" class="apicart-products__product-info-line apicart-products__product-info-line--name">
+                <strong>Planche Mastery</strong>
+            </a>
+            <div class="apicart-products__product-info-line">
+                <p>
+                    A Comprehensive Guide with Supporting Media that Details Everything you Need to Know about the Coveted Movement, the Planche.
+                    <br><br>
+                    It includes:
+                    <br>
+                    <ul>
+                        <li>
+                            How to Train Movements that Revolves Around the Planche like Presses, Planche Pushups, etc.
+                        </li>
+                        <li>
+                            A 16-Week Plan Suitable for Individuals of All Skill Level
+                        </li>
+                        <li>
+                            How to Plan and Program your Future Planche Training
+                        </li>
+                        <li>
+                            Warm-up Routine Designed to Prepare your Body and Reduce the Risk of Injuries
+                        </li>
+                        <li>
+                            1-on-1 Video Call Coaching
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="apicart-products__product-info-line apicart-products__product-info-price-buy-button">
+                <span class="apicart-products__product-info-price"><b>SGD&nbsp;99.00</b></span>
+                <span>
+                    <a class="apicart-buy-button apicart-button apicart-button--solid" data-apicart-add-item="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/data/03/3.json" >Add to cart</a>
+                </span>
             </div>
         </div>
-    </div>
-</article><br>
-
-<article>
-    <div class="bgcontainer">
-        <h2 class="text-center"><u>Planche Mastery</u></h1>
-    
-        <div class="d-flex flex-lg-row justify-content-center py-3">
-            <video class="video-fluid img-thumbnail basicimg2" autoplay loop controls muted>
-                <source src="Assets/Straddle Planche.mp4" type="video/mp4"/>
-            </video>
-        </div>
-        <div class="sampleflex">
-            <h3 class="text-danger">What you will get:</h3>
-            <ul class="proddesc">
-                <li>
-                    Comprehensive Guide with supporting media on all things Planche related
-                </li>
-                <li>
-                    How to train other variation Planche like Presses, Planche Pushup, etc.
-                </li>
-                <li>
-                    A 16-Week Plan suitable for Beginners, Intermediate, and Advanced levels
-                </li>
-                <li>
-                    How to plan and program your future Planche training
-                </li>
-                <li>
-                    Warm-up routine designed to prepare your body and reduce the risk of injury
-                </li>
-                <li>
-                    1-on-1 Video Call
-                </li>
-            </ul>
-            <div class="sampleflex2">
-                <h1 class="price">
-                    $99
-                </h1>
-                <button class="buybtn" data-apicart-add-item="https://cdn.apicart.dev/external/kelmr738y22probf7pftjeufr1vahzyd/data/03/3.json">
-                    Buy
-                </button>
-            </div>
     </div>
 </article>
 
+<!--Script and stuff-->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

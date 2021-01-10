@@ -12,12 +12,15 @@ body{
     width: 15%;
     height: 15%;
 }
+article{
+    padding-bottom: 4%;
+}
 
 
 
 
 /*  Login/Register Popup  */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -81,106 +84,55 @@ input[type=text], input[type=password] {
 }
 
 
+/*Back to Top Button */
+#bttopbtn {
+    display: none;
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    z-index: 999999;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    opacity: 70%;
+}
+#bttopbtn:hover {
+    cursor: pointer;
+    background-color: deeppink;
+    opacity: 100%;
+}
 
 
-/* Training Programs Page CSS */
 
-.bgcontainer{
-    display: block;
-    background-color: turquoise;
-    padding-top: 2%;
-    border-radius: 5%;
-    margin-left: 6%;
-    margin-right: 6%;
-}
-.bgcontainer2{
-    display: block;
-    background-color: #23506F;
-    padding-top: 2%;
-    border-radius: 2%;
-    margin-left: 6%;
-    margin-right: 6%;
-}
-.basicimg{
-    border-radius: 10%;
-    width: 30%;
-}
-.basicimg2{
-    border-radius: 10%;
-    width: 35%;
-}
-hr{
-    width: 50%;
-    left: 50%;
-    border: 50%;
-    border-color: #888;
-}
-.sampleflex3{
+/* CSS for the most used Flexbox */
+.simpleflex{
     display:flex;
-    justify-content: center;
-}
-@media screen and (min-width: 800px){
-    .sampleflex3{
-        flex-direction: row;
-    }
-}
-.sampleflex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 22%;
-    padding-right: 22%;
-}
-.sampleflex2{
-    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 1%;
-    padding-bottom: 2%;
-}
-.price{
-    color: green;
-    flex-basis: 1;
-    font-family: Verdana;
-}
-.price2{
-    color: #3DE16D;
-    flex-basis: 1;
-    font-family: Verdana;
-}
-.buybtn{
-    color: #333;
-    border-radius: 10%;
-}
-.proddesc{
-    color: black;
-}
-.buybtn{
-    flex-grow: 1;
-    flex-basis: 5;
-    max-width: 20%;
+    justify-content: space-around;
 }
 
+/* This is for product descriptions */
+.flextext{
+    max-width: 50%;
+}
 
 /*  Media Query Stuff  */
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 800px){
     .navbar .nav-item .dropdown-menu{ display: none; }
 	.navbar .nav-item:hover .nav-link{ color: #fff;  }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
     .navbar .nav-item .dropdown-menu{ margin-top:0; }
 } 
-@media screen and (max-width: 300px){
-    span.psw{
-        display: block;
-        float: none;
-    }
-    .cancelbtn{
-        width: 100%;
-    }
-}
+
 @media screen and (max-width: 800px){
-    .sampleflex{
-        padding-left: 5%;
-        padding-right: 5%;
+    .simpleflex{
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+    }
+    .flextext{
+        max-width: 80%;
     }
 }
