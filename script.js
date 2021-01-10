@@ -36,14 +36,21 @@ $('#password, #confirmPass').on('keyup', function () {
 
 
 /* API Javascript */
+var ApicartConfig = {
+  env: 'dev',
+  storage: {
+    cacheKey: 3 
+  }
+}
+
 Apicart
   .setDevEnv()
   .configure({
     store: new Apicart.Store({
       token: "LfkUIBRkw51xZcypQcDPc42GD7Vn0gGH?3d19cQlIS5o!!iqldLgyCA8tKYF_j12"
     }),
-    payments: new Apicart.Payments({token: 
-      "bgYHvg2CPgd1yq6HrvIUkgab3Hsyx8!5gmaMWCSBjEI!a2A9cCgmrh?3d6k8i81l"
+    payments: new Apicart.Payments({
+      token: "bgYHvg2CPgd1yq6HrvIUkgab3Hsyx8!5gmaMWCSBjEI!a2A9cCgmrh?3d6k8i81l"
     }),
     vueComponentsTranslator: {
       localization: {
