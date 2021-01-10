@@ -81,12 +81,12 @@ Testing:
 doesnt work is when you can't remove items from the cart, and the items in the cart
 has wrong names and prices. 
 
-The weird way to I found to solve it is to fill in everything in the checkout page 
-(including the shipping information). Then checkout the items. Afterwords, 
-it will still be in the cart, this is when you click on the cart and it
-will bring up everything you filled in earlier and you press checkout again. This time
-however, during the loading screen, you refresh the page. Afterwards, it works 
-like intended again.
+It seems to act up after you have made a successful purchase (as in fully go through
+the checkout page). A solution seems to be manually changing the cache key? (This 
+is a question mark because I don't know exactly if this solves it). And waiting after,
+while the API bugs out, you have to clear the cart as well which is just filling the
+form with random information, checkout. Click the cart again and checkout again 
+(cause the thing hasn't refresh yet) and then reload the page.
 
 Also the checkout page on the cart doesnt work on any other page other than the Home page.
 
