@@ -81,6 +81,19 @@ Testing:
 element it gave me an error for the Javascript Link. However, on my phone, it works
 100% of the time so far. 
 
+I have figured a trick to make it work which is weird. So the way to identify when it
+doesnt work is when you can't remove items from the cart, and the items in the cart
+has wrong names and prices. 
+
+After identifying that its not working, the way to solve it is to fill in everything
+in the checkout page (including the shipping information). Then checkout the items.
+Afterwords, it will still be in the cart, this is when you click on the cart and it
+will bring up everything you filled in earlier and you press checkout again. This time
+however, during the loading screen, you refresh the page. Afterwards, it works 
+like intended again.
+
+Also the checkout page on the cart doesnt work on any other page other than the Home page.
+
 
 Acknowledgement:
 --------------------------------------------------------------------------------

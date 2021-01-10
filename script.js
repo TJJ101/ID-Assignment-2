@@ -36,6 +36,16 @@ $('#password, #confirmPass').on('keyup', function () {
 
 
 /* API Javascript */
+var ApicartConfig = {
+  // You can configure dev environment like this
+  env: 'dev',
+  storage: {
+  // Random string, number or a date. 
+  // When the cache key is different then the one in customer browser, Apicart will purge existing cache and will load new data
+  // Cache key must be set before any of our script is loaded 
+    cacheKey: 3 
+  }
+}
 
 Apicart
   .setDevEnv()
