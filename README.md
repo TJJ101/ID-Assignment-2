@@ -77,7 +77,9 @@ special deals for members compared to non-members like discounts and such.
 Testing:
 ------------------------------------------------------------------------------
 
-➡ 
+➡ Sometimes the API doesn't work. And I think its the server side since on inspect
+element it gave me an error for the Javascript Link. However, on my phone, it works
+100% of the time so far. 
 
 
 Acknowledgement:
