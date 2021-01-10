@@ -81,12 +81,19 @@ Testing:
 doesnt work is when you can't remove items from the cart, and the items in the cart
 has wrong names and prices. 
 
+It might have something to do with the cachekey? but i can't seem to really fix it.
+For now, I tried to make it a random number so hopefully that means it will work
+everytime.
+
 It seems to act up after you have made a successful purchase (as in fully go through
 the checkout page). A solution seems to be manually changing the cache key? (This 
-is a question mark because I don't know exactly if this solves it). And waiting after,
-while the API bugs out, you have to clear the cart as well which is just filling the
-form with random information, checkout. Click the cart again and checkout again 
-(cause the thing hasn't refresh yet) and then reload the page.
+is a question mark because I don't know exactly if this solves it). Although now that
+I have it on random, sometimes it will work sometimes it doesn't.  When it doesn't
+the popup on the home page is messed up and the cart item shows that its different
+from the actual product. To clear it, you need to go through the checkout and fill 
+in the details, click back onto the cart again (because it doenst fully clear) then 
+click checkout again. When the loading becomes long, thats when you refresh. If it works
+when you add to cart, everything should be normal now.
 
 Also the checkout page on the cart doesnt work on any other page other than the Home page.
 

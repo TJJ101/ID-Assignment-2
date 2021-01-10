@@ -1,3 +1,10 @@
+var ApicartConfig = {
+  env: 'dev',
+  storage: {
+    cacheKey: Math.random
+  }
+}
+
 // Back to Top Button Script
 window.onscroll = function() {scrollVisibility()};
 function scrollVisibility() {
@@ -36,12 +43,6 @@ $('#password, #confirmPass').on('keyup', function () {
 
 
 /* API Javascript */ 
-var ApicartConfig = {
-  env: 'dev',
-  storage: {
-    cacheKey: 40
-  }
-}
 Apicart
   .setDevEnv()
   .configure({
